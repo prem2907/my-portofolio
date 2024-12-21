@@ -1,0 +1,155 @@
+
+.home-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 6rem 0rem; 
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem; 
+  width: 55%;
+}
+
+.intro {
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(45, 45, 45);
+}
+
+.autotext {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.text-section button {
+  height: 3rem;
+  width: 9.375rem;
+  margin-top: 1.25rem;
+  border: 2px solid black;
+}
+
+.social-icons {
+  margin-top: 3.125rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1.875rem;
+}
+
+.social-icons img {
+  width: 1.875rem;
+  height: auto;
+  color: rgb(45, 45, 45);
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: translateY(-5px); 
+}
+
+.image-section {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.5rem 1.25rem;
+}
+
+.profile-pic {
+  width: 21.875rem; 
+  aspect-ratio: 1; 
+  border-radius: 50%; 
+  border: 2px solid rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1240px) { 
+  .home-container {
+    /* flex-direction: column-reverse; Stack sections vertically on smaller screens */
+    padding: 5rem 0rem; /* Adjust padding using rem for smaller screens */
+  }
+
+  .text-section {
+    /* width: auto; */
+    /* margin: auto; */
+    padding: 0.5rem 0.5rem; /* Adjust padding using rem for smaller screens */
+  }
+
+  .intro {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(45, 45, 45);
+  }
+
+  .autotext {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .image-section {
+    justify-content: center; /* Center image section on smaller screens */
+    padding: 1.25rem; /* Adjust padding using rem for smaller screens */
+  }
+
+  .profile-pic {
+    width: 20rem; /* Reduce profile picture size using rem (250px) */
+  }
+
+  .social-icons {
+    margin-top: 2rem; /* Adjust margin using rem for social icons on smaller screens */
+  }
+}
+
+@media (max-width: 990px) {  
+  .home-container {
+    flex-direction: column-reverse;
+    padding: 5.5rem 0rem; /* Adjust padding using rem for smaller screens */
+  }
+  .text-section {
+    width: auto;
+    align-items: center;
+    /* margin: auto; */
+    padding: 2.5rem 0.5rem; /* Adjust padding using rem for smaller screens */
+  }
+  .intro {
+    font-weight: bold;
+    font-size: 3rem;
+    /* color: rgb(45, 45, 45); */
+  }
+  .autotext{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 679px){ 
+  .intro {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .autotext{
+    font-size: 3rem;
+  }
+  .profile-pic {
+    width: 15rem; 
+  }
+}
+
+@media (max-width: 520px){ 
+  .intro {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .autotext{
+    font-size: 2rem;
+  }
+  .profile-pic {
+    width: 10rem; 
+  }
+}

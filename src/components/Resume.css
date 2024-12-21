@@ -1,0 +1,154 @@
+
+.resume-container {
+    padding: 5.625rem 6.25rem;
+}
+
+.resume-container h2 {
+    margin-bottom: 1.25rem;
+}
+
+.resume-content {
+    display: flex;
+}
+
+.skills-container {
+    width: 30%;
+}
+
+.divider{
+    height: auto;
+    width: 0.313rem;
+    border-radius: 0.625rem;
+    background-color: #5d5d5d;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.experience-container {
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-grid {
+    display: grid;
+    justify-content: flex-start; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.625rem; 
+}
+
+.skill-item {
+    padding: 0.625rem;
+    border-radius: 0.313rem;
+    text-align: left; 
+    display: flex; 
+    align-items: center; 
+}
+
+.skill-item i {
+    margin-right: 0.5rem;
+}
+
+.skill-item img {
+    width: 0.625rem;
+    height: auto;
+    margin-right: 0.313rem; 
+}
+
+.experience-card {
+    background-color: whitesmoke; 
+    color: rgb(49, 49, 49);
+    border: none;
+    padding: 0.938rem;
+    margin-top: 0.625rem; 
+    border-radius: 0.938rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.experience-card:hover {
+    background-color: #000000; 
+    color: white; 
+    transform: translateY(-0.625rem); 
+    box-shadow: 0 0.5rem 0rem rgb(102, 102, 102); 
+}
+
+.experience-card h4 {
+    margin: 5px 0; 
+    font-weight: bold;
+}
+
+.experience-card p{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+@media (max-width: 1240px){
+    .resume-container {
+        padding: 5.625rem 5rem;
+    }
+}
+
+@media (max-width: 990px){
+    .resume-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-container {
+        width: auto;
+    }
+
+    .skills-grid {
+        display: grid;
+        justify-content: flex-start; 
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.625rem; 
+    }
+
+    .divider{
+        height: 0.313rem ;
+        width: auto;
+        border-radius: 0.625rem;
+        background-color: #5d5d5d;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .experience-container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 680px){
+    .resume-container {
+        padding: 5.625rem 4rem;
+    }
+    .skill-item{
+        font-size: 0.9rem;
+    }
+
+    .experience-card h4 {
+        font-size: 1.4rem;
+    }
+    .experience-card p{
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 520px){
+    .resume-container {
+        padding: 5.625rem 2rem;
+    }
+    .skills-grid {
+        display: grid;
+        justify-content: flex-start; 
+        grid-template-columns: repeat(4, 0.5fr);
+        gap: 0.1rem; 
+        /* background-color: chartreuse; */
+    }
+    .skill-item{
+        font-size: 0.8rem;
+    }
+}

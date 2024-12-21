@@ -1,0 +1,17 @@
+.navbar{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+}
+
+.nav-item{
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}

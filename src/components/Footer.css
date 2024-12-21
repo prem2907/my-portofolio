@@ -1,0 +1,14 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around the text */
+    position: relative; /* Position relative for any future adjustments */
+    bottom: 0; /* Stick to the bottom if needed */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between;
+}
+
+
