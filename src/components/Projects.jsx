@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "A movie recommendation system that offers personalized suggestions. Developed a dynamic front-end using AngularJS and integrated the TMDb API for real-time movie data retrieval",
       technologies: "AngularJS, Bootstrap, TMDb API",
-      image: "/assets/projectpreview/cinechoice.jpg" // Update with actual image path
+      image: "/assets/projectpreview/CineChoice.jpg" // Update with actual image path
     },
     {
       id: 2,
