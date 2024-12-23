@@ -2,14 +2,17 @@
 .home-container {
   display: flex;
   align-items: center; 
-  justify-content: center; 
+  justify-content: space-evenly; 
   padding: 6rem 0rem; 
+  /* background-color: cornflowerblue; */
 }
 
 .text-section {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: 1rem 2rem; 
+  gap: 1rem;
   width: 55%;
 }
 
@@ -22,23 +25,32 @@
 .autotext {
   font-weight: bold;
   font-size: 4rem;
+  /* background-color: rosybrown; */
 }
 
 .text-section button {
   height: 3rem;
   width: 9.375rem;
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
   border: 2px solid black;
 }
 
+.text-section a{
+  /* background-color: cornflowerblue; */
+}
+
 .social-icons {
-  margin-top: 3.125rem;
+  /* background-color: coral; */
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .social-icons a {
   text-decoration: none;
   color: black;
-  margin-right: 1.875rem;
+  /* background-color: cornflowerblue; */
+  /* margin-right: 1.875rem; */
 }
 
 .social-icons img {
@@ -70,6 +82,12 @@
   transform: translateY(-2px);
 }
 
+@media (max-width: 1310px) {
+  .autotext{
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 1240px) { 
   .home-container {
     /* flex-direction: column-reverse; Stack sections vertically on smaller screens */
@@ -77,8 +95,6 @@
   }
 
   .text-section {
-    /* width: auto; */
-    /* margin: auto; */
     padding: 0.5rem 0.5rem; /* Adjust padding using rem for smaller screens */
   }
 
@@ -90,7 +106,7 @@
 
   .autotext {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 3.2rem;
   }
 
   .image-section {
@@ -102,20 +118,16 @@
     width: 20rem; /* Reduce profile picture size using rem (250px) */
   }
 
-  .social-icons {
-    margin-top: 2rem; /* Adjust margin using rem for social icons on smaller screens */
-  }
 }
 
 @media (max-width: 990px) {  
   .home-container {
     flex-direction: column-reverse;
-    padding: 5.5rem 0rem; /* Adjust padding using rem for smaller screens */
+    padding: 5rem 0rem; /* Adjust padding using rem for smaller screens */
   }
   .text-section {
     width: auto;
     align-items: center;
-    /* margin: auto; */
     padding: 2.5rem 0.5rem; /* Adjust padding using rem for smaller screens */
   }
   .intro {
@@ -142,6 +154,9 @@
 }
 
 @media (max-width: 520px){ 
+  .home-container {
+    padding: 3rem 0rem; 
+  }
   .intro {
     font-weight: bold;
     font-size: 1.5rem;

@@ -139,14 +139,13 @@
 
 @media (max-width: 520px){
     .resume-container {
-        padding: 5.625rem 2rem;
+        padding: 5.625rem 1.5rem;
     }
     .skills-grid {
         display: grid;
         justify-content: flex-start; 
-        grid-template-columns: repeat(4, 0.5fr);
+        grid-template-columns: repeat(3, 0.5fr);
         gap: 0.1rem; 
-        /* background-color: chartreuse; */
     }
     .skill-item{
         font-size: 0.8rem;

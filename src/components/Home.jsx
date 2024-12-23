@@ -5,7 +5,7 @@ import "./Home.css"; // Import CSS for styling
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ["Full Stack Developer", "Frontend Developer", "Software Developer", "Tech Enthusiast"],
+    words: ["Full Stack Developer", "Frontend Developer", "Software Developer"],
     loop: {}
   });
 
@@ -23,7 +23,7 @@ const Home = () => {
           <button
             type="button"
             className="btn btn-outline-dark btn-sm"
-            style={{ fontWeight: "500", fontSize: "20px", marginTop: "20px" }}>
+            style={{ fontWeight: "500", fontSize: "20px" }}>
             Resume
           </button>
         </a>

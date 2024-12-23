@@ -2,13 +2,17 @@
 .footer {
     background-color: black; /* Black background */
     color: white; /* White text */
-    text-align: center; /* Center text */
-    padding: 20px; /* Padding around the text */
-    position: relative; /* Position relative for any future adjustments */
+    /* text-align: center; Center text */
+    padding: 20px 20px; /* Padding around the text */
     bottom: 0; /* Stick to the bottom if needed */
     width: 100%; /* Full width */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
+@media (max-width: 520px) {
+    .footer p:nth-child(2){
+        font-size: 70%;
+    }
+}
 

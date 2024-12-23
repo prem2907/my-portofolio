@@ -7,6 +7,10 @@
     z-index: 1000;
 }
 
+.navber-brand{
+    width: 1px;
+}
+
 .nav-item{
     transition: transform 0.3s ease-in-out;
 }
